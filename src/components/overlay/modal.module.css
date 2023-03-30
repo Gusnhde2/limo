@@ -1,0 +1,110 @@
+
+
+.open{
+    position: fixed;
+    right:0;
+    background-color: #000000d4;
+    width: 100%;
+    height: 100%;
+    animation-name: slideIn;
+    animation-timing-function: ease-out;
+    animation-duration: 1000ms;
+    z-index: 2;
+    
+}
+
+.sidebar{
+
+    background-color: #222;
+    position: fixed;
+    right: 0;
+    height: 100%;
+    width: 25vw;
+    padding: 2rem;
+    animation-name: sidebar;
+    animation-timing-function:ease-out;
+    animation-duration: 1s;
+    z-index: 3
+    
+     
+}
+content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 2rem 1rem 1rem;
+    -webkit-animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+	        animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+
+}
+
+h3{
+    font-size: 2rem;
+    width: max-content;
+}
+
+p,h3,.sidebarBtn{
+    font-family: sans-serif;
+    color: #fff;
+    line-height: 1.7rem;
+    text-align: justify;
+}
+
+p{
+    display: inline-block;
+    width: 15rem
+}
+
+.sidebarBtn{
+    align-self: flex-start;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 550;
+    letter-spacing: 0.1875rem;
+    border: 1px solid #e43e2e;
+    padding: 0.9375rem 1.875rem 0.9375rem 1.875rem;
+    transition: all 500ms;
+}
+
+.sidebarBtn:hover{
+    background-color: #e43e2e;
+    color:#000
+}
+
+/* #20272f */
+
+
+@-webkit-keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(1000px);
+              transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(1000px);
+              transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+@keyframes slideIn {
+    from{width: 0% ;}
+    to{ width: 100%;}
+}
+
+@keyframes sidebar {
+    from{width: 0% }
+    to{ width: 25%}
+}

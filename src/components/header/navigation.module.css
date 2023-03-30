@@ -1,0 +1,34 @@
+
+.navigation ul{
+    display: flex;
+    gap: 40px;
+	font-weight:400;
+}
+
+.navigation li{
+    padding:45px 0px;
+	line-height:30px;
+	font-weight:550;
+	color: #1c1c1c ;
+	font-size: 17px;
+	text-transform: uppercase;
+    transition: color 0.5s;
+	font-family:'DM Sans', sans-serif;
+	border-bottom: 0.25rem inset #fff;
+	
+}
+
+
+
+.navigation li:hover{
+	
+	color:#e53e29;
+	border-bottom: 0.25rem inset #e53e29 ;
+	
+}
+
+
+    
+
+	
+	
