@@ -1,4 +1,16 @@
+.contactIcon{
+  width: 2rem;
+  height: 1.5rem;
+  color:#e43e2e
+}
 
+li{
+  display: flex;
+  gap: 1rem;
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 1rem
+}
 
 .open{
     position: fixed;

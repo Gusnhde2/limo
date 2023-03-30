@@ -1,5 +1,8 @@
 import classes from "../overlay/modal.module.css";
 import Logo from "../header/logo.js";
+import { FaLocationArrow } from "react-icons/fa";
+import { GiPhone } from "react-icons/gi";
+import { HiOutlineMail } from "react-icons/hi";
 
 const Sidebar = () => {
   return (
@@ -15,6 +18,22 @@ const Sidebar = () => {
         </p>
 
         <button className={classes.sidebarBtn}>Consultation</button>
+
+        <h3>Contact info</h3>
+        <ul>
+          <li>
+            <FaLocationArrow className={classes.contactIcon} />
+            <address>Chicago 12, Melborne City, USA</address>
+          </li>
+          <li>
+            <GiPhone className={classes.contactIcon} />
+            <phone>111 111-1111</phone>
+          </li>
+          <li>
+            <HiOutlineMail className={classes.contactIcon} />
+            <email>roonix@gmail.com</email>
+          </li>
+        </ul>
       </content>
     </div>
   );
