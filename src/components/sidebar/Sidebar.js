@@ -3,11 +3,17 @@ import Logo from "../header/logo.js";
 import { FaLocationArrow } from "react-icons/fa";
 import { GiPhone } from "react-icons/gi";
 import { HiOutlineMail } from "react-icons/hi";
+import MobileNavigation from "../header/MobileNavigation";
 
 const Sidebar = () => {
   return (
     <div className={classes.sidebar}>
-      <Logo color='#fff' background='#222' width='300' />
+      <Logo
+        className={classes.logo}
+        color='#fff'
+        background='#222'
+        width='18.75rem'
+      />
       <content>
         <h3>About us</h3>
         <p>
@@ -35,6 +41,7 @@ const Sidebar = () => {
           </li>
         </ul>
       </content>
+      <MobileNavigation />
     </div>
   );
 };

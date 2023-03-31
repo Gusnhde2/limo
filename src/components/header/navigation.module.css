@@ -1,16 +1,22 @@
 
 .navigation ul{
+
     display: flex;
-    gap: 40px;
+    gap: 2.5rem;
 	font-weight:400;
+	height: 7rem;
+	
 }
 
-.navigation li{
-    padding:45px 0px;
-	line-height:30px;
+.navigation li a{
+	display: flex;
+	align-items: center;
+	text-align: center;
+    height:7rem;
+	line-height:1.875rem;
 	font-weight:550;
 	color: #1c1c1c ;
-	font-size: 17px;
+	font-size: 1.0625rem;
 	text-transform: uppercase;
     transition: color 0.5s;
 	font-family:'DM Sans', sans-serif;
@@ -20,11 +26,17 @@
 
 
 
-.navigation li:hover{
+.navigation li a:hover,.navigation li a:active{
 	
 	color:#e53e29;
 	border-bottom: 0.25rem inset #e53e29 ;
 	
+}
+
+@media screen and (max-width: 768px) {
+    .navigation{
+        display: none;
+    }
 }
 
 
