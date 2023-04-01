@@ -8,11 +8,19 @@
 	
 }
 
-.navigation li a{
+.navigation {
 	display: flex;
 	align-items: center;
-	text-align: center;
-    height:7rem;
+	gap: 2.5rem;
+	
+}
+
+
+a{   
+	display: flex;
+	align-items: center;
+	 
+	height:7rem;
 	line-height:1.875rem;
 	font-weight:550;
 	color: #1c1c1c ;
@@ -20,13 +28,18 @@
 	text-transform: uppercase;
     transition: color 0.5s;
 	font-family:'DM Sans', sans-serif;
-	border-bottom: 0.25rem inset #fff;
+	border-bottom: 0.25rem inset #fff}
+
+
+
+.navigation a:hover,.navigation a:active{
+	
+	color:#e53f299a;
+	border-bottom: 0.25rem inset #e53f2988 ;
 	
 }
 
-
-
-.navigation li a:hover,.navigation li a:active{
+.active{
 	
 	color:#e53e29;
 	border-bottom: 0.25rem inset #e53e29 ;

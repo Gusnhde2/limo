@@ -1,27 +1,29 @@
 import classes from "./mobileNavigation.module.css";
+import { NavLink } from "react-router-dom";
 
 const MobileNavigation = (props) => {
+  const activeClass = ({ isActive }) => (isActive ? classes.active : "");
   return (
     <div className={classes.navigation}>
-      <a onClick={props.onClick} href='#'>
+      <NavLink to='/' className={activeClass} onClick={props.onClick}>
         Home
-      </a>
+      </NavLink>
 
-      <a onClick={props.onClick} href='#'>
+      <NavLink to='/about' className={activeClass} onClick={props.onClick}>
         About
-      </a>
+      </NavLink>
 
-      <a onClick={props.onClick} href='#'>
+      <NavLink to='/services' className={activeClass} onClick={props.onClick}>
         Services
-      </a>
+      </NavLink>
 
-      <a onClick={props.onClick} href='#'>
+      <NavLink to='/projects' className={activeClass} onClick={props.onClick}>
         Projects
-      </a>
+      </NavLink>
 
-      <a onClick={props.onClick} href='#'>
+      <NavLink to='/contact' className={activeClass} onClick={props.onClick}>
         Contact us
-      </a>
+      </NavLink>
     </div>
   );
 };
