@@ -3,10 +3,9 @@ import classes from "./header.module.css";
 import Navigation from "./Navigation";
 import Modal from "../overlay/Overlay";
 import Logo from "./logo.js";
-import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 
-const Header = () => {
+const Header = (props) => {
   const [showModal, setShowModal] = useState(false);
 
   function handleClick() {
@@ -16,7 +15,6 @@ const Header = () => {
   function handleClose() {
     setShowModal(false);
   }
-
   return (
     <div className={classes.navbar}>
       <a href='#' className={classes.logo}>

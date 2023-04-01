@@ -5,7 +5,7 @@ import { GiPhone } from "react-icons/gi";
 import { HiOutlineMail } from "react-icons/hi";
 import MobileNavigation from "../header/MobileNavigation";
 
-const Sidebar = () => {
+const Sidebar = (props) => {
   return (
     <div className={classes.sidebar}>
       <Logo
@@ -41,7 +41,10 @@ const Sidebar = () => {
           </li>
         </ul>
       </content>
-      <MobileNavigation />
+      <button className={classes.exitBtn} onClick={props.onClick}>
+        X
+      </button>
+      <MobileNavigation onClick={props.onClick} />
     </div>
   );
 };

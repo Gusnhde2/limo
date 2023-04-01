@@ -81,6 +81,20 @@ p{
     color:#000
 }
 
+.exitBtn{
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: #fff;
+  padding: 1.5rem;
+  background-color: #e43d2e85;
+
+}
+
+.exitBtn:hover, .exitBtn:focus, .exitBtn:active{
+  background-color: #e43e2e;
+}
+
 /* #20272f */
 
 

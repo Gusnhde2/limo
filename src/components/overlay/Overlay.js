@@ -5,14 +5,10 @@ import classes from "./modal.module.css";
 import Sidebar from "../sidebar/Sidebar";
 
 function Modal(props) {
-  const showModal = props.showModal;
-
   return ReactDOM.createPortal(
     <React.Fragment>
-      <div
-        onClick={props.onClose}
-        className={classes[`${showModal ? "open" : "closed"}`]}></div>
-      <Sidebar />
+      <div onClick={props.onClose} className={classes.open}></div>
+      <Sidebar onClick={props.onClose} />
     </React.Fragment>,
     document.getElementById("modal-root")
   );
