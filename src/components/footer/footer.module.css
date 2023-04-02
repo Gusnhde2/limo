@@ -1,0 +1,143 @@
+.footer{
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr 2fr;
+    column-gap: 2rem;
+    
+    width: 100%;
+    
+    background-color: #222;
+    padding-top: 4rem;
+}
+
+
+h3{
+   font-size: 1.3rem;
+   color: #fff;
+   margin-bottom: 2rem;
+   font-weight: 600;
+}
+
+.footerSection ul li,.footerSection ul li a, .footerLocation ul li a {
+   color: #999;
+   font-size: 1rem;
+   letter-spacing: 0.0525rem;
+   font-family: sans-serif;
+   text-transform: none;
+   height: fit-content;
+   border-bottom: none;
+   line-height: normal;
+   
+}
+
+.contact{
+    justify-self: center;
+    display: flex;
+    align-items: left;
+    gap: 1rem;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    padding-left: 2rem;
+}
+
+.footerLocation{
+    display: flex;
+    align-items: left;
+    gap: 1rem;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+
+    
+}
+.contact p{
+   
+    width: 100%;
+    color: #999;
+    margin-bottom: 2rem;
+    
+}
+
+.contact a{
+    color: #fff;
+    border: none;
+    font-size: 1.225rem;
+    font-weight: 600;
+    display: flex;
+    gap:1rem;
+    align-items: center;
+    text-transform:none;
+    height: fit-content;
+
+}
+
+.social{
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.mail{
+    font-size: 0.5rem;
+    text-decoration: underline;
+}
+
+
+.icon{
+    font-size: 2.4rem;
+    font-weight: bold;
+    justify-self: center;
+}
+
+.contact a:hover, .mail:hover{
+    color: #e43e2e;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerLocation ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    color: #fff ;
+    font-size: 1rem;
+}
+
+.footerLocation ul li a{
+    color: #fff;
+    padding-left: 2rem;
+}
+
+.footerLocation ul li  p{
+    
+    text-align: left;
+}
+
+@media screen and (max-width: 548px){
+     .footer{
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 4rem 0 2rem 3rem;
+     }
+
+     .contact{
+        padding: 0;
+        justify-self: self-start;
+     }
+
+     .footerSection{
+        align-items: left;
+     }
+     .footerLocation{
+        align-items: left;
+     }
+     .footerLocation ul li p{
+        
+        align-self: left;
+    }
+}
