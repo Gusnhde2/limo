@@ -61,7 +61,7 @@ const Footer = () => {
         <ul>
           <li>
             <a
-              href='https://www.google.com/maps/dir/44.9625902,15.9355135/limomonta%C5%BEa+lepuzanovi%C4%87+cazin+radno+vrijeme/@44.9719616,15.8792264,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x476149baa3f956cb:0x64bcc2b16460adf2!2m2!1d15.8992731!2d44.9833465?hl=bs'
+              href='https://www.google.com/maps/dir//limomonta%C5%BEa+lepuzanovi%C4%87+cazin+radno+vrijeme/@44.896897,15.7309519,11z/data=!4m8!4m7!1m0!1m5!1m1!1s0x476149baa3f956cb:0x64bcc2b16460adf2!2m2!1d15.8992731!2d44.9833465?hl=bs'
               className={classes.location}>
               <GoLocation className={classes.icon} />
             </a>

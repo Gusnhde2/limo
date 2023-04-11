@@ -1,0 +1,45 @@
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 70%;
+}
+
+input{
+    padding: 0.625rem 1.5625rem;
+    line-height: 1.75rem;
+    height: 3.375rem;
+    border: 0.125rem solid transparent;
+    font-size: 0.9375rem;
+    font-family: sans-serif;
+    color: #000;
+}
+
+input::placeholder{
+    color: #777;
+}
+
+.textInput{
+    height: 10rem;
+    grid-column: 1/3;
+}
+
+.formButton{
+    grid-column: 2/3 ;
+    justify-self: end;
+    width: 30%;
+    background-color: red;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    form{
+        grid-template-columns: 1fr;
+    }
+    .textInput{
+        grid-column: 1/1;
+    }
+    .formButton{
+        grid-column: 1/1;
+    }
+}

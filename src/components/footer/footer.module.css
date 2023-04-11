@@ -120,9 +120,10 @@ section{
 
 @media screen and (max-width: 548px){
      .footer{
-        grid-template-columns: 1fr 1fr;
+        width: 100vw;
+        grid-template-columns: 1fr ;
         gap: 2rem;
-        padding: 4rem 0 2rem 3rem;
+        padding-left: 20%;
      }
 
      .contact{

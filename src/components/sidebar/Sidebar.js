@@ -7,7 +7,7 @@ import MobileNavigation from "../header/MobileNavigation";
 
 const Sidebar = (props) => {
   return (
-    <div className={classes.sidebar}>
+    <div className={props.className}>
       <Logo
         className={classes.logo}
         color='#fff'

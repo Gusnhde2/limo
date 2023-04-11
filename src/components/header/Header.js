@@ -7,13 +7,18 @@ import { Bars3Icon } from "@heroicons/react/24/solid";
 
 const Header = (props) => {
   const [showModal, setShowModal] = useState(false);
+  const [className, setClassName] = useState("");
 
   function handleClick() {
+    setClassName("open");
     setShowModal(true);
   }
 
   function handleClose() {
-    setShowModal(false);
+    setClassName("closed");
+    setTimeout(() => {
+      setShowModal(false);
+    }, 2000);
   }
   return (
     <div className={classes.navbar}>
@@ -26,7 +31,13 @@ const Header = (props) => {
           <Bars3Icon className={classes.icon} />
         </button>
       </div>
-      {showModal && <Modal showModal={showModal} onClose={handleClose} />}
+      {showModal && (
+        <Modal
+          showModal={showModal}
+          onClose={handleClose}
+          className={className}
+        />
+      )}
     </div>
   );
 };
