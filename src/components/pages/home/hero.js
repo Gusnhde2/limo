@@ -1,25 +1,33 @@
 import { FaCheck } from "react-icons/fa";
 import classes from "./hero.module.css";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    console.log(scrolled);
+  };
   return (
     <section className={classes.heroSection}>
       <div className={classes.container}>
         <div className={classes.textWrapper}>
-          <p>SMART SOLUTION...</p>
-          <h1>The best roofing company</h1>
+          <h3>Pametna riješenja...</h3>
+          <h1>Gdje se spaja tradicija i kvalitet</h1>
           <div className={classes.qoute}>
-            Roofing whenan unknown printer took a galley of type and scrambled
-            it to make a type specimen book.
+            Građevinski obrt za izgradnju krovne konstrukcije i ugradnju krovnih
+            elemenata od čeličnog lima.
           </div>
           <div>
-            <a className={classes.heroBtn}></a>
+            <Link
+              to='/contact'
+              className={classes.heroBtn}
+              onClick={toggleVisible}></Link>
             <div className={classes.expirience}>
               <div className={classes.checkWrap}>
                 <FaCheck className={classes.check} />
               </div>
 
-              <div className={classes.qoute}>30+ Years of exirience</div>
+              <div className={classes.qoute}>30+ Godina iskustva</div>
             </div>
           </div>
         </div>

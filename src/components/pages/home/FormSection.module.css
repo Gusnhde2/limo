@@ -1,0 +1,31 @@
+.formSection{
+    background-color: #1c1c1c ;
+    padding: 5rem 0 5rem 0;
+    position: relative;
+    height: 52rem;
+    overflow: hidden;
+    z-index: 4;
+}
+
+.imageContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.imageContainer img{
+    width: 100vw;
+    object-fit:contain;
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 200px) {
+    .imageContainer{
+        position: absolute;
+        
+        bottom: 0;
+        top: auto;
+
+    }
+}

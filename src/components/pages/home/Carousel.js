@@ -3,6 +3,12 @@ import { Carousel } from "react-responsive-carousel";
 import classes from "./CarouselSection.module.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { BsHouseDoor } from "react-icons/bs";
+import {
+  MdHomeRepairService,
+  MdOutlineAutorenew,
+  MdOutlineWaves,
+} from "react-icons/md";
+import { GiTeePipe } from "react-icons/gi";
 
 const CarouselSection = () => {
   const [screenWidth, setScreenWidth] = useState();
@@ -11,9 +17,9 @@ const CarouselSection = () => {
     console.log(screenWidth);
   }, [window.innerWidth]);
 
-  let scp = 30;
+  let scp = 15;
   if (screenWidth < 700) {
-    scp = 85;
+    scp = 80;
   }
 
   return (
@@ -22,7 +28,9 @@ const CarouselSection = () => {
       <h2>We provide quality roofing services</h2>
       <Carousel
         axis={"horizontal"}
-        centerSlidePercentage={scp}
+        // autoFocus={true}
+        // emulateTouch={true}
+        centerSlidePercentage={15}
         centerMode={true}
         showThumbs={false}
         stopOnHover={true}
@@ -31,15 +39,26 @@ const CarouselSection = () => {
         showStatus={false}
         infiniteLoop={true}
         dynamicHeight={true}
-        // width={1350}
         useKeyboardArrows={true}
         autoPlay={5000}>
         <div>
           <div className={classes.card}>
             <div className={classes.iconWrapper}>
-              <BsHouseDoor className={classes.icon} />
+              <MdOutlineAutorenew className={classes.icon} />
             </div>
-            <h4>Roof Renovation</h4>
+            <h4>Renoviranje krova</h4>
+            <div className={classes.text}>
+              Roofing whenan unknow printer took a gallery of type and scrambled
+              it to make a type specim...
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className={classes.card}>
+            <div className={classes.iconWrapper}>
+              <MdHomeRepairService className={classes.icon} />
+            </div>
+            <h4>Reparacija krova</h4>
             <div className={classes.text}>
               Roofing whenan unknow printer took a gallery of type and scrambled
               it to make a type specim...
@@ -51,7 +70,7 @@ const CarouselSection = () => {
             <div className={classes.iconWrapper}>
               <BsHouseDoor className={classes.icon} />
             </div>
-            <h4>Roof Renovation</h4>
+            <h4>Izgradnja krova</h4>
             <div className={classes.text}>
               Roofing whenan unknow printer took a gallery of type and scrambled
               it to make a type specim...
@@ -61,9 +80,9 @@ const CarouselSection = () => {
         <div>
           <div className={classes.card}>
             <div className={classes.iconWrapper}>
-              <BsHouseDoor className={classes.icon} />
+              <MdOutlineWaves className={classes.icon} />
             </div>
-            <h4>Roof Renovation</h4>
+            <h4>Pokrivka limom</h4>
             <div className={classes.text}>
               Roofing whenan unknow printer took a gallery of type and scrambled
               it to make a type specim...
@@ -73,9 +92,9 @@ const CarouselSection = () => {
         <div>
           <div className={classes.card}>
             <div className={classes.iconWrapper}>
-              <BsHouseDoor className={classes.icon} />
+              <GiTeePipe className={classes.icon} />
             </div>
-            <h4>Roof Renovation</h4>
+            <h4>Ugradnja oluka</h4>
             <div className={classes.text}>
               Roofing whenan unknow printer took a gallery of type and scrambled
               it to make a type specim...

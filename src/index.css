@@ -97,6 +97,8 @@ body{
 html{
   width: 100%;
   font-size: 16px;
+  font-family: sans-serif;
+  overflow-x: hidden;
 }
 
 @media screen and (max-width: 768px){
@@ -116,4 +118,11 @@ html{
   html {
     font-size: 1vw;
   }
+}
+
+.carousel .slider-wrapper.axis-horizontal .slider{
+  /* margin-left: 0;
+  justify-content: space-evenly; */
+  
+  
 }

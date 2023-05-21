@@ -1,28 +1,29 @@
 import classes from "./navigation.module.css";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
 const Navigation = () => {
   const activeClass = ({ isActive }) => (isActive ? classes.active : "");
   return (
     <div className={classes.navigation}>
       <NavLink to='/' className={activeClass}>
-        Home
+        Naslovna
       </NavLink>
 
       <NavLink to='/about' className={activeClass}>
-        About
+        O nama
       </NavLink>
 
       <NavLink to='/services' className={activeClass}>
-        Services
+        Usluge
       </NavLink>
 
       <NavLink to='/projects' className={activeClass}>
-        Projects
+        Projekti
       </NavLink>
 
       <NavLink to='/contact' className={activeClass}>
-        Contact us
+        Kontakt
       </NavLink>
     </div>
   );

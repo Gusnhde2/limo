@@ -1,0 +1,155 @@
+.container{
+    display: flex;
+    margin: 5rem auto;
+    gap: 8rem;
+    padding: 4rem;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.imageContainer{
+    height: 57.6875rem;
+    width: 54.9375rem;
+    background-color: #999;
+    position: relative;
+    background-image: url("../../images/background/18.jpg");
+    background-size: contain;
+}
+
+.expirienceBox{
+    background-image: url('../../images/background/19.png');
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 20.625rem;
+    height: 22.875rem;
+    text-align: center;
+    padding: 30px 15px 10px;
+    background-color: #e53e29;
+    border: 10px solid #fff;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textContainer h3{
+   color: #e53e29;
+   font-weight: 600;
+    letter-spacing: 0.1625rem;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 2rem;
+    
+}
+
+.textContainer{
+    width: 50%;
+}
+
+.textContainer h2{
+    letter-spacing: 0.125rem;
+    color: #222;
+    text-transform: uppercase;
+    margin-top: 1.3rem;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.textContainer p{
+    color: #555;
+    width: 80%;
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
+.counter{
+    font-weight: 550;
+    overflow: hidden;
+    line-height: 1em;
+    font-size: 6.5rem;
+    color: #fff;
+    font-family: sans-serif;
+   
+}
+
+.boxtext{
+    line-height: 3rem;
+    font-size: 2rem;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif
+}
+
+.infoCards{
+    margin-top: 3rem;
+
+    display: flex;
+    justify-content: flex-start;
+    gap: 6rem;
+}
+
+.infoCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.icon{
+    font-size: 5rem;
+    color: #e53e29;
+
+}
+
+.aboutMail{
+    font-size: 1.5rem;
+    color: #222 ;
+    text-transform:none;
+    height: auto;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        flex-direction: column-reverse;
+    }
+
+    .textContainer h2{
+        font-size: 3rem;
+    }
+
+    .textContainer h3{
+        font-size: 1.3rem;
+    }
+
+    .textContainer p{
+        width: 200%;
+    }
+
+    .expirienceBox{
+        width: 18.625rem;
+    height: 19.875rem;
+    }
+
+    .counter{
+        font-size: 7rem;
+    }
+
+    .boxtext{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+     
+    .infoCards{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .infoCard{
+        width: 160%;
+    }
+   
+ 
+}

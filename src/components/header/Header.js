@@ -4,10 +4,22 @@ import Navigation from "./Navigation";
 import Modal from "../overlay/Overlay";
 import Logo from "./logo.js";
 import { Bars3Icon } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
 
 const Header = (props) => {
   const [showModal, setShowModal] = useState(false);
   const [className, setClassName] = useState("");
+  const [visibleHeader, setVisibleHeader] = useState();
+
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled >= 300) {
+      setVisibleHeader(false);
+    } else if (scrolled <= 300) {
+      setVisibleHeader(true);
+    }
+  };
+  window.addEventListener("scroll", toggleVisible);
 
   function handleClick() {
     setClassName("open");
@@ -21,10 +33,10 @@ const Header = (props) => {
     }, 2000);
   }
   return (
-    <div className={classes.navbar}>
-      <a href='#' className={classes.logo}>
+    <div className={visibleHeader ? classes.navbar : classes.sticky}>
+      <Link to='/' className={classes.logo}>
         <Logo color={"#000"} background={"#fff"} width='24rem' />
-      </a>
+      </Link>
       <Navigation />
       <div className={classes.buttons}>
         <button className={classes.menuButton} onClick={handleClick}>

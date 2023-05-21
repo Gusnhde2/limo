@@ -1,0 +1,130 @@
+.pageTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    font-family: sans-serif;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    background-size: cover;
+    padding: 150px 0px 140px;
+    background-image: url("../../images/background/20.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35rem;
+    
+}
+
+.pageTitle:after {
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0.70;
+    background: #000;
+}
+
+.pagetitle h2{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.container {
+    position: static;
+    max-width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    z-index: 3;
+}
+.container .list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    z-index: 4;
+}
+
+.list a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 5;
+    border: none;
+    height:fit-content;
+    font-size: 1.5rem;
+    
+}
+.list a:active, .list a:focus{
+    color: orangered
+}
+
+.list a:nth-last-of-type(1){
+    color: orangered;
+}
+
+.container h2{
+    font-size: 4rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.container span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 600;
+}
+.scrollDown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    bottom: -2.375rem;
+    width: 4.75rem;
+    height: 4.75rem;
+    
+    cursor: pointer;
+    line-height: 4.75rem;
+    margin-left: -2.375rem;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 0px 0.9375rem rgba(0,0,0,0.10);
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+    z-index: 5;
+}
+
+.arrowDown{
+    font-size: 2rem;
+}
+
+.scrollDown:after{
+    position: absolute;
+    content: '';
+    left: -0.4375rem;
+    top: -0.4375rem;
+    right: -0.4375rem;
+    bottom: -0.4375rem;
+    border-radius: 50%;
+    border: 0.0625rem solid #fff;
+    box-shadow: 0px 0px 0.9375rem rgba(0,0,0,0.10);
+}
+
+.scrollDown:hover{
+    color: #fff;
+    background-color: orangered;
+}

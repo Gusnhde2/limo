@@ -18,8 +18,16 @@ li{
   background-color: #000000d4;
   width: 100%;
   height: 100%;
-  z-index: 2;
+  z-index: 7;
+  overflow: hidden;
 
+}
+
+.modal img{
+  position: fixed;
+  top: 25%;
+  
+  transform: scale(1.3);
 }
 
 .open{
@@ -40,12 +48,12 @@ li{
 .sidebar{
 
     background-color: #222;
-    position: absolute;
+    position: fixed;
     right: 0;
     height: 100%;
     width: 25vw;
     padding: 2rem;
-    z-index: 3     
+    z-index: 8     
 }
 
 content{

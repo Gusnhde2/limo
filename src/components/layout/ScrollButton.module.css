@@ -1,0 +1,28 @@
+.scrollButton{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 2rem;
+    height: 2rem;
+    z-index: 99999;
+    
+}
+
+.arrowUp{
+    border: 1px solid #999;
+    border-radius: 50%;
+    padding: 0.5rem;
+    font-size: 3.5rem;
+    transform: translate(-100%, -100%);
+    color: #999;
+    z-index: 99999;
+}
+
+.arrowUp:hover, .arrowUp:active{
+    border-color: #e43e2e;
+    color: #e43e2e;
+}
+
+.inactive{
+   display: none;
+}
