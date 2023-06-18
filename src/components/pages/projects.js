@@ -65,10 +65,10 @@ const Projects = () => {
         />
       )}
 
-      <PageTitle pageName='Projekti' />
+      <PageTitle pageName="Projekti" />
       <div className={classes.topTitles}>
-        <h3>...OUR PROJECTS</h3>
-        <h2>OUR LATEST PROJECTS</h2>
+        <h3>...Naši projekti</h3>
+        <h2>Naši zdannji projekti</h2>
       </div>
       <div className={classes.imagesContainer}>
         {slicedImages.map((image) => {
@@ -94,7 +94,8 @@ const Projects = () => {
             <button
               className={classes.paginationBtn}
               id={number}
-              onClick={paginationHandler}>
+              onClick={paginationHandler}
+            >
               {number}
             </button>
           );

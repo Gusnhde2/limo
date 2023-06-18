@@ -19,47 +19,47 @@ const Form = () => {
 
   return (
     <div className={classes.formContainer}>
-      <h3>Book appointment...</h3>
-      <h2 className={classes.formTitle}>Need any roofing help</h2>
+      <h3>Rezervišite termin...</h3>
+      <h2 className={classes.formTitle}>Potrebna vam je pomoć?</h2>
       <form onSubmit={formik.handleSubmit}>
         <Input
-          inputType='name'
-          label='Name'
+          inputType="name"
+          label="Name"
           onChange={formik.handleChange}
           value={formik.values.name}
         />
 
         <Input
-          inputType='lastname'
-          label='Lastname'
+          inputType="lastname"
+          label="Lastname"
           onChange={formik.handleChange}
           value={formik.values.lastname}
         />
 
         <Input
-          inputType='email'
-          label='E-Mail'
+          inputType="email"
+          label="E-Mail"
           onChange={formik.handleChange}
           value={formik.values.email}
         />
 
         <Input
-          inputType='phone'
-          label='Phone number'
+          inputType="phone"
+          label="Phone number"
           onChange={formik.handleChange}
           value={formik.values.phone}
         />
 
         <Input
-          inputType='text'
-          label='Type Your Message'
+          inputType="text"
+          label="Type Your Message"
           onChange={formik.handleChange}
           value={formik.values.text}
           className={classes.textInput}
         />
 
-        <button className={classes.formButton} type='submit'>
-          Submit
+        <button className={classes.formButton} type="submit">
+          Pošalji
         </button>
       </form>
     </div>
