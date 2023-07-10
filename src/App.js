@@ -14,16 +14,17 @@ function App() {
     <Layout>
       <Suspense
         fallback={
-          <div className='centered'>
+          <div className="centered">
             <LoadingSpinner />
           </div>
-        }></Suspense>
+        }
+      ></Suspense>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/services' element={<Services />} />
-        <Route path='/projects' element={<Projects />} />
-        <Route path='/contact' element={<ContactUs />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        {/* <Route path='/services' element={<Services />} /> */}
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
     </Layout>
   );

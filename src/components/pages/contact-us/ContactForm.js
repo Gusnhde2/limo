@@ -12,7 +12,7 @@ const ContactForm = () => {
       text: "",
     },
     onSubmit: (values) => {
-      alert(values.name + " " + values.lastname + " " + values.email);
+      console.log("Submited");
     },
   });
 
@@ -20,47 +20,47 @@ const ContactForm = () => {
     <section className={classes.contactForm}>
       <div className={classes.formContainer}>
         <h2 className={classes.formTitle}>
-          Need any kind of roofing help?? Send us a Massage
+          Potrebna vam je neka pomoć?? Pošaljite nam poruku
         </h2>
         <form onSubmit={formik.handleSubmit}>
           <Input
-            inputType='name'
-            label='Name'
+            inputType="name"
+            label="Ime"
             onChange={formik.handleChange}
             value={formik.values.name}
           />
 
           <Input
-            inputType='lastname'
-            label='Lastname'
+            inputType="lastname"
+            label="Prezime"
             onChange={formik.handleChange}
             value={formik.values.lastname}
           />
 
           <Input
-            inputType='email'
-            label='E-Mail'
+            inputType="email"
+            label="E-Mail"
             onChange={formik.handleChange}
             value={formik.values.email}
           />
 
           <Input
-            inputType='phone'
-            label='Phone number'
+            inputType="phone"
+            label="Telefon"
             onChange={formik.handleChange}
             value={formik.values.phone}
           />
 
           <Input
-            inputType='text'
-            label='Type Your Message'
+            inputType="text"
+            label="Vaša poruka"
             onChange={formik.handleChange}
             value={formik.values.text}
             className={classes.textInput}
           />
 
-          <button className={classes.formButton} type='submit'>
-            Submit
+          <button className={classes.formButton} type="submit">
+            Pošalji
           </button>
         </form>
       </div>

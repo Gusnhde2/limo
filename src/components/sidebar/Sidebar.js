@@ -10,12 +10,12 @@ const Sidebar = (props) => {
     <div className={props.className}>
       <Logo
         className={classes.logo}
-        color='#fff'
-        background='#222'
-        width='18.75rem'
+        color="#fff"
+        background="#222"
+        width="18.75rem"
       />
       <content>
-        <h3>About us</h3>
+        <h3>O nama</h3>
         <p>
           The argument in favor of using filler text goes something like this:
           If you use real content in the Consulting Process, anytime you reach a
@@ -23,21 +23,21 @@ const Sidebar = (props) => {
           itself and not the design.
         </p>
 
-        <button className={classes.sidebarBtn}>Consultation</button>
+        <button className={classes.sidebarBtn}>Konsultacije</button>
 
-        <h3>Contact info</h3>
+        <h3>Kontakt infomacije</h3>
         <ul>
           <li>
             <FaLocationArrow className={classes.contactIcon} />
-            <address>Chicago 12, Melborne City, USA</address>
+            <address>Cazin, Ćoralići 190</address>
           </li>
           <li>
             <GiPhone className={classes.contactIcon} />
-            <phone>111 111-1111</phone>
+            <phone>+387 61 759 944</phone>
           </li>
           <li>
             <HiOutlineMail className={classes.contactIcon} />
-            <email>roonix@gmail.com</email>
+            <email>limomontaza@gmail.com</email>
           </li>
         </ul>
       </content>

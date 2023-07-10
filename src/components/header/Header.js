@@ -30,12 +30,12 @@ const Header = (props) => {
     setClassName("closed");
     setTimeout(() => {
       setShowModal(false);
-    }, 2000);
+    }, 300);
   }
   return (
     <div className={visibleHeader ? classes.navbar : classes.sticky}>
-      <Link to='/' className={classes.logo}>
-        <Logo color={"#000"} background={"#fff"} width='24rem' />
+      <Link to="/" className={classes.logo}>
+        <Logo color={"#000"} background={"#fff"} width="24rem" />
       </Link>
       <Navigation />
       <div className={classes.buttons}>

@@ -13,7 +13,7 @@ const Form = () => {
       text: "",
     },
     onSubmit: (values) => {
-      alert(values.name + " " + values.lastname + " " + values.email);
+      console.log("Submited");
     },
   });
 
@@ -24,14 +24,14 @@ const Form = () => {
       <form onSubmit={formik.handleSubmit}>
         <Input
           inputType="name"
-          label="Name"
+          label="Ime"
           onChange={formik.handleChange}
           value={formik.values.name}
         />
 
         <Input
           inputType="lastname"
-          label="Lastname"
+          label="Prezime"
           onChange={formik.handleChange}
           value={formik.values.lastname}
         />
@@ -45,14 +45,14 @@ const Form = () => {
 
         <Input
           inputType="phone"
-          label="Phone number"
+          label="Telefon"
           onChange={formik.handleChange}
           value={formik.values.phone}
         />
 
         <Input
           inputType="text"
-          label="Type Your Message"
+          label="Vaša poruka"
           onChange={formik.handleChange}
           value={formik.values.text}
           className={classes.textInput}

@@ -5,24 +5,24 @@ const MobileNavigation = (props) => {
   const activeClass = ({ isActive }) => (isActive ? classes.active : "");
   return (
     <div className={classes.navigation}>
-      <NavLink to='/' className={activeClass} onClick={props.onClick}>
-        Home
+      <NavLink to="/" className={activeClass} onClick={props.onClick}>
+        Naslovna
       </NavLink>
 
-      <NavLink to='/about' className={activeClass} onClick={props.onClick}>
-        About
+      <NavLink to="/about" className={activeClass} onClick={props.onClick}>
+        O nama
       </NavLink>
 
-      <NavLink to='/services' className={activeClass} onClick={props.onClick}>
+      {/* <NavLink to='/services' className={activeClass} onClick={props.onClick}>
         Services
+      </NavLink> */}
+
+      <NavLink to="/projects" className={activeClass} onClick={props.onClick}>
+        Projekti
       </NavLink>
 
-      <NavLink to='/projects' className={activeClass} onClick={props.onClick}>
-        Projects
-      </NavLink>
-
-      <NavLink to='/contact' className={activeClass} onClick={props.onClick}>
-        Contact us
+      <NavLink to="/contact" className={activeClass} onClick={props.onClick}>
+        Kontakt
       </NavLink>
     </div>
   );

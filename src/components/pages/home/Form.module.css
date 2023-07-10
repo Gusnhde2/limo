@@ -1,90 +1,92 @@
-form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin-top: 2rem;
-    z-index: 999;
-    
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+  z-index: 999;
 }
 
-.formContainer{
-    width: 65% ;
-    position: absolute;
-    right: 0;
-    margin-right: 1rem;
-    z-index: 9999;
-    
+.formContainer {
+  width: 65%;
+  position: absolute;
+  right: 0;
+  margin-right: 1rem;
+  z-index: 9999;
 }
 
-input{
-    padding: 1rem 1.5625rem;
-    line-height: 1.75rem;
-    height: 3.375rem;
-    border: 0.125rem solid transparent;
-    font-size: 1.2rem;
-    font-family: sans-serif;
-    color: #000;
-    background-color: #fff;
+input {
+  padding: 1rem 1.5625rem;
+  line-height: 1.75rem;
+  height: 3.375rem;
+  border: 0.125rem solid transparent;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  color: #000;
+  background-color: #fff;
 }
 
-input::placeholder{
-    color: #777;
+input::placeholder {
+  color: #777;
 }
 
-
-.textInput{
-    box-sizing: border-box;
-    height: 13rem;
-    grid-column: 1/3;
-    resize: none;
-    /* text-align: start; */
-   
+.textInput {
+  box-sizing: border-box;
+  height: 13rem;
+  grid-column: 1/3;
+  resize: none;
+  /* text-align: start; */
 }
 
-.formButton{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-column: 2/3 ;
-    justify-self: end;
-    width: 40%;
-    height: 4rem;
-    background-color: transparent;
-    padding: 0.875rem 2.25rem;
-    text-transform: uppercase;
-    color: #fff;
-    border: 1px solid #e43e2e ;
-    text-align: center;
-    font-weight: 550;
-    font-size: 1.3rem;
+.formButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2/3;
+  justify-self: end;
+  width: 40%;
+  height: 4rem;
+  background-color: transparent;
+  padding: 0.875rem 2.25rem;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #e43e2e;
+  text-align: center;
+  font-weight: 550;
+  font-size: 1.3rem;
+  transition: all 0.3s;
 }
 
-h2{
-    font-size: 2.25rem;
-    text-transform: uppercase;
-    font-family: 'Jost', sans-serif;
-    color: #000;
-    margin-top: 1.3rem;
-    font-weight: 550;
+.formButton:hover {
+  color: #fff;
+  background-color: #e43e2e;
 }
 
-.formTitle{
-    color: #fff;
+h2 {
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  font-family: "Jost", sans-serif;
+  color: #000;
+  margin-top: 1.3rem;
+  font-weight: 550;
+}
+
+.formTitle {
+  color: #fff;
 }
 
 @media screen and (max-width: 768px) {
-    form{
-        grid-template-columns: 1fr;
-    }
-    .textInput{
-        grid-column: 1/1;
-    }
-    .formButton{
-        grid-column: 1/1;
-    }
-    .formContainer{
-        position: relative;
-        width: 70%;
-        margin: 0 auto ;
-    }
+  form {
+    grid-template-columns: 1fr;
+  }
+  .textInput {
+    grid-column: 1/1;
+  }
+  .formButton {
+    grid-column: 1/1;
+  }
+  .formContainer {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+  }
 }

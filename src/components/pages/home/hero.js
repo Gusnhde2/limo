@@ -12,16 +12,17 @@ const HeroSection = () => {
       <div className={classes.container}>
         <div className={classes.textWrapper}>
           <h3>Pametna riješenja...</h3>
-          <h1>Gdje se spaja tradicija i kvalitet</h1>
+          <h1>Spajanje tradicije i kvaliteta</h1>
           <div className={classes.qoute}>
             Građevinski obrt za izgradnju krovne konstrukcije i ugradnju krovnih
             elemenata od čeličnog lima.
           </div>
           <div>
             <Link
-              to='/contact'
+              to="/contact"
               className={classes.heroBtn}
-              onClick={toggleVisible}></Link>
+              onClick={toggleVisible}
+            ></Link>
             <div className={classes.expirience}>
               <div className={classes.checkWrap}>
                 <FaCheck className={classes.check} />

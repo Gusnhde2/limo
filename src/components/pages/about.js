@@ -70,10 +70,11 @@ const About = () => {
               <div className={classes.infoCard}>
                 <MdCall className={classes.icon} />
                 <a className={classes.aboutMail} href="tel:+38761759944">
-                  Ibrahim: 061 759 944
+                  <div>Ibrahim:</div>
+                  061 759 944
                 </a>
                 <a className={classes.aboutMail} href="tel:+38762322445">
-                  Muho: 062 322 445
+                  <div>Muho: </div> 062 322 445
                 </a>
               </div>
             </div>

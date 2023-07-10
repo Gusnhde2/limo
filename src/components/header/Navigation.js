@@ -6,23 +6,23 @@ const Navigation = () => {
   const activeClass = ({ isActive }) => (isActive ? classes.active : "");
   return (
     <div className={classes.navigation}>
-      <NavLink to='/' className={activeClass}>
+      <NavLink to="/" className={activeClass}>
         Naslovna
       </NavLink>
 
-      <NavLink to='/about' className={activeClass}>
+      <NavLink to="/about" className={activeClass}>
         O nama
       </NavLink>
 
-      <NavLink to='/services' className={activeClass}>
+      {/* <NavLink to='/services' className={activeClass}>
         Usluge
-      </NavLink>
+      </NavLink> */}
 
-      <NavLink to='/projects' className={activeClass}>
+      <NavLink to="/projects" className={activeClass}>
         Projekti
       </NavLink>
 
-      <NavLink to='/contact' className={activeClass}>
+      <NavLink to="/contact" className={activeClass}>
         Kontakt
       </NavLink>
     </div>
